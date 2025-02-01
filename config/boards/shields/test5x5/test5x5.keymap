@@ -72,16 +72,22 @@
             display-name = "UI-Des";
 // ----------------------------------------------
 // |      layer1      |        Layer2       |      Layer3      |      layer4      |        Layer5       |
-// |      none        |        none         |      none        |      none        |        none         |
-// |      none        |        none         |      none        |      none        |        none         |
-// |      none        |        none         |      none        |      none        |        none         |
-// |      none        |        none         |      none        |      none        |        none         |
+// ┌─────┬─────┬─────┬─────┬─────┐
+// │ Esc │ Tab │ Undo│ Redo│ Del │
+// ├─────┼─────┼─────┼─────┼─────┤
+// │ rect│ line│ Grid│ Snap│Align│
+// ├─────┼─────┼─────┼─────┼─────┤
+// │ Dup │ Grp │ Ung │ Comp│Frame│
+// ├─────┼─────┼─────┼─────┼─────┤
+// │ Z+  │ Z-  │ circ│Expor│ Pan │
+// └─────┴─────┴─────┴─────┴─────┘
+
             bindings = <
                 &tog 0  &tog 1  &tog 2  &tog 3  &tog 4
-                &none   &none   &none   &none   &none
-                &none   &none   &none   &none   &none
-                &none   &none   &none   &none   &none
-                &none   &none   &none   &none   &none
+                &kp ESC   &kp TAB   &kp LC(Z)   &kp LC(Y)   &kp DEL
+                &kp R   &kp L   &kp LC(APOS)   &kp LS(S)   &kp LC(LS(A))
+                &kp LC(D)   &kp LC(G)   &kp LC(LS(G))   &kp LC(LA(K))   &kp F
+                &kp (LC(EQUAL))   &kp LC(MINUS)   &kp O   &kp LC(LS(E))   &kp SPACE
             >;
         };
 
@@ -89,16 +95,21 @@
             display-name = "Bt-Ctrl";
 // ----------------------------------------------
 // |      layer1      |        Layer2       |      Layer3      |      layer4      |        Layer5       |
-// |      none        |        none         |      none        |      none        |        none         |
-// |      none        |        none         |      none        |      none        |        none         |
-// |      none        |        none         |      none        |      none        |        none         |
-// |      none        |        none         |      none        |      none        |        none         |
+// ┌─────┬─────┬─────┬─────┬─────┐
+// │     │ LGUI│ RGUI│     │     │
+// ├─────┼─────┼─────┼─────┼─────┤
+// │ calc│L-out│  SC │ prnt│     │
+// ├─────┼─────┼─────┼─────┼─────┤
+// │     │     │     │btclr│btldr│
+// ├─────┼─────┼─────┼─────┼─────┤
+// │ D1  │ D2  │ D3  │  D4 │ D5  │
+// └─────┴─────┴─────┴─────┴─────┘
             bindings = <
                 &tog 0  &tog 1  &tog 2  &tog 3  &tog 4
-                &none   &none   &none   &none   &none
-                &none   &none   &none   &none   &none
-                &none   &none   &none   &none   &none
-                &none   &none   &none   &none   &none
+                &none   &kp LGUI   &kp RGUI   &none   &none
+                &kp K_CALC   &kp C_AL_KEYBOARD_LAYOUT   &kp C_SNAPSHOT   &kp LC(P)   &none
+                &none   &none   &none   &bt BT_CLR   &bootloader
+                &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
             >;
         };
     };
