@@ -12,46 +12,59 @@
 // |      layer1      |        Layer2       |      Layer3      |      layer4      |        Layer5       |
 // |      Enter       |        7            |      8           |      9           |        /            |
 // |      Shift       |        4            |      5           |      6           |        *            |
-// |      none        |        none         |      none        |      none        |        none         |
-// |      none        |        none         |      none        |      none        |        none         |
+// |      Escape      |        1            |      2           |      3           |        +            |
+// |      %           |        =            |      0           |      _           |        -            |
             bindings = <
                 &tog 0  &tog 1  &tog 2  &tog 3  &tog 4
-                &kp RET   &kp 7   &kp 8   &kp 9   &kp SLASH
-                &kp LSHIFT   &kp 4   &kp 5   &kp 6   &kp ASTERISK
-                &kp ESC   &kp 1   &kp 2   &kp 3   &kp PLUS
-                &kp PERCENT   &kp EQUAL   &kp 0   &kp UNDERSCORE   &kp MINUS
+                &kp RET   &kp N7   &kp N8   &kp N9   &kp SLASH
+                &kp LSHIFT   &kp N4   &kp N5   &kp N6   &kp ASTERISK
+                &kp ESC   &kp N1   &kp N2   &kp N3   &kp PLUS
+                &kp PERCENT   &kp EQUAL   &kp N0   &kp UNDERSCORE   &kp MINUS
             >;
         };
         layer2 { // Layer 2
             display-name = "Code";
 // ----------------------------------------------
 // |      layer1      |        Layer2       |      Layer3      |      layer4      |        Layer5       |
-// |      none        |        none         |      none        |      none        |        none         |
-// |      none        |        none         |      none        |      none        |        none         |
-// |      none        |        none         |      none        |      none        |        none         |
-// |      none        |        none         |      none        |      none        |        none         |
+// ┌─────┬─────┬─────┬─────┬─────┐
+// │ Esc │ (   │  )  │ []  │ {}  │
+// ├─────┼─────┼─────┼─────┼─────┤
+// │ Del │  '" │ Up  │ ;:  │ Ent │
+// ├─────┼─────┼─────┼─────┼─────┤
+// │ =   │Left │ Down│Right│ Run │
+// ├─────┼─────┼─────┼─────┼─────┤
+// │ copy│  ,< │ #   │  .> │paste│
+// └─────┴─────┴─────┴─────┴─────┘
+
             bindings = <
                 &tog 0  &tog 1  &tog 2  &tog 3  &tog 4
-                &none   &none   &none   &none   &none
-                &none   &none   &none   &none   &none
-                &none   &none   &none   &none   &none
-                &none   &none   &none   &none   &none
+                &kp ESC   &kp LS(N9)   &kp LS(N0)   &kp LBKT   &kp RBKT
+                &kp DEL   &kp APOS   &kp UP   &kp SEMI   &kp RET
+                &kp EQUAL   &kp LEFT   &kp DOWN   &kp RIGHT   &kp F5
+                &kp LC(C)   &kp COMMA   &kp NUHS   &kp DOT   &kp LC(V)
             >;
         };
         layer3 { // Layer 3
             display-name = "3D-Des";
 // ----------------------------------------------
 // |      layer1      |        Layer2       |      Layer3      |      layer4      |        Layer5       |
-// |      none        |        none         |      none        |      none        |        none         |
-// |      none        |        none         |      none        |      none        |        none         |
-// |      none        |        none         |      none        |      none        |        none         |
-// |      none        |        none         |      none        |      none        |        none         |
+// ┌─────┬─────┬─────┬─────┬─────┐
+// │FIlet│ save│ Undo│ Redo│  new│
+// ├─────┼─────┼─────┼─────┼─────┤
+// │ Line│ Rect│ Circ│ Arc │ ENT │
+// ├─────┼─────┼─────┼─────┼─────┤
+// │ Dim │ Trim│ Extr│ Cut │ Hole│
+// ├─────┼─────┼─────┼─────┼─────┤
+// │ Iso │miror│mate │ zoom│ faar│
+// └─────┴─────┴─────┴─────┴─────┘
+
+// 
             bindings = <
                 &tog 0  &tog 1  &tog 2  &tog 3  &tog 4
-                &none   &none   &none   &none   &none
-                &none   &none   &none   &none   &none
-                &none   &none   &none   &none   &none
-                &none   &none   &none   &none   &none
+                &kp F   &kp LC(S)   &kp LC(Z)   &kp LC(Y)   &kp LC(N)
+                &kp L   &kp R   &kp C   &kp A   &kp RET
+                &kp D   &kp T   &kp E   &kp X   &kp H
+                &kp LC(N7)   &kp LC(M)   &kp M   &kp LC(EQUAL)   &kp LC(MINUS)
             >;
         };
 
