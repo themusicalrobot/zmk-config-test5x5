@@ -16,7 +16,7 @@
 // |      none        |        none         |      none        |      none        |        none         |
             bindings = <
                 &tog 0  &tog 1  &tog 2  &tog 3  &tog 4
-                &kp ENT &kp 7   &kp 8   &kp 9   &kp SLASH
+                &kp ENTER   &kp 7   &kp 8   &kp 9   &kp SLASH
                 &kp SHIFT   &kp 4   &kp 5   &kp 6   &kp ASTERISK
                 &none   &none   &none   &none   &none
                 &none   &none   &none   &none   &none
