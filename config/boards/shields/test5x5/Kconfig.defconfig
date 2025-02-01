@@ -1,0 +1,6 @@
+if SHIELD_TEST5X5
+
+config ZMK_KEYBOARD_NAME
+    default "test5x5"
+
+endif
